@@ -1,0 +1,53 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import BottomNav from "@/components/BottomNav";
+import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Dayzi – Your Beauty Finds ✨",
+    template: "%s | Dayzi",
+  },
+  description:
+    "Discover the best beauty products for body care, skincare, and hair care. Cute, feminine product recommendations with Amazon links.",
+  keywords: ["beauty", "skincare", "body care", "hair care", "amazon", "product recommendations", "dayzi"],
+  openGraph: {
+    title: "Dayzi – Your Beauty Finds ✨",
+    description:
+      "Discover the best beauty products for body care, skincare, and hair care.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Dayzi",
+  },
+  robots: { index: true, follow: true },
+  icons: { icon: "/favicon.ico" },
+};
+
+import BackgroundStickers from "@/components/BackgroundStickers";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" data-scroll-behavior="smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <BackgroundStickers />
+        <Navbar />
+        <main className="flex-1 pb-20 md:pb-0">{children}</main>
+        <Footer />
+        <BottomNav />
+      </body>
+    </html>
+  );
+}
