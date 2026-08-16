@@ -135,21 +135,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Featured Products ───────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 pb-10 pt-2">
-        <div className="text-center mb-6">
-          <h2 className="text-xl font-bold text-neutral-800 mb-1">
-            Featured in recent video 📺
-          </h2>
-          <p className="text-sm text-neutral-500">
-            Products you saw and loved 🎀
-          </p>
-        </div>
-        <ProductGrid products={featuredProducts} columns={2} />
-      </section>
-
       {/* ── Category Cards ──────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 pb-16">
+      <section className="max-w-6xl mx-auto px-4 pb-10">
         <div className="text-center mb-8">
           <h2 className="text-xl font-bold text-neutral-800 mb-1">
             Shop by Category
@@ -206,6 +193,19 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* ── Featured Products ───────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-4 pb-10 pt-2">
+        <div className="text-center mb-6">
+          <h2 className="text-xl font-bold text-neutral-800 mb-1">
+            Featured in recent video 📺
+          </h2>
+          <p className="text-sm text-neutral-500">
+            Products you saw and loved 🎀
+          </p>
+        </div>
+        <ProductGrid products={featuredProducts} columns={2} />
       </section>
 
       {/* ── Why Dayzi ───────────────────────────────────── */}
