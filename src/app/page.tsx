@@ -74,7 +74,10 @@ export default function HomePage() {
     "sol-de-janeiro-cheirosa-62",
     "gisou-honey-infused",
   ];
-  const featuredProducts = products.filter(p => featuredSlugs.includes(p.slug));
+  // preserve the exact slug order by sorting after filter
+  const featuredProducts = featuredSlugs
+    .map(slug => products.find(p => p.slug === slug))
+    .filter(Boolean) as typeof products;
 
   return (
     <div className="relative min-h-screen">
@@ -130,6 +133,19 @@ export default function HomePage() {
             </span>
           ))}
         </div>
+      </section>
+
+      {/* ── Featured Products ───────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-4 pb-10 pt-2">
+        <div className="text-center mb-6">
+          <h2 className="text-xl font-bold text-neutral-800 mb-1">
+            Featured in recent video 📺
+          </h2>
+          <p className="text-sm text-neutral-500">
+            Products you saw and loved 🎀
+          </p>
+        </div>
+        <ProductGrid products={featuredProducts} columns={2} />
       </section>
 
       {/* ── Category Cards ──────────────────────────────── */}
@@ -190,19 +206,6 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
-
-      {/* ── Featured Products ───────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 pb-16">
-        <div className="text-center mb-8">
-          <h2 className="text-xl font-bold text-neutral-800 mb-1">
-            Featured in recent video 📺
-          </h2>
-          <p className="text-sm text-neutral-500">
-            Products you saw and loved 🎀
-          </p>
-        </div>
-        <ProductGrid products={featuredProducts} columns={2} />
       </section>
 
       {/* ── Why Dayzi ───────────────────────────────────── */}
