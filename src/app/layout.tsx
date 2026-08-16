@@ -21,12 +21,6 @@ export const metadata: Metadata = {
     siteName: "Dayzi",
   },
   robots: { index: true, follow: true },
-  icons: {
-    icon: [
-      { url: "/favicon-icon.jpg", type: "image/jpeg" },
-    ],
-    apple: "/favicon-icon.jpg",
-  },
 };
 
 import BackgroundStickers from "@/components/BackgroundStickers";
