@@ -293,9 +293,22 @@ export const products: Product[] = [
     description: "The classic Johnson's Baby Oil that locks in moisture for incredibly soft, silky skin.",
     emoji: "💛",
   },
-  // ─── BODY CARE — Fragrance ─────────────────────────────────────────
   {
     id: "bc-023",
+    slug: "vaseline-petroleum-jelly",
+    name: "Vaseline Petroleum Jelly Original Skin Care For Dry Skin",
+    brand: "Vaseline",
+    category: "body-care",
+    subcategory: "Moisturizers",
+    tags: ["vaseline", "petroleum jelly", "dry skin", "moisturizer", "body care", "healing", "skin protectant", "original"],
+    affiliateUrl: "https://amzn.to/4zkVnoZ",
+    image: "/products/body-care/moisturizers/vaseline-petroleum-jelly.webp",
+    description: "The iconic Vaseline Petroleum Jelly that seals in moisture and helps heal dry, cracked skin.",
+    emoji: "🏺",
+  },
+  // ─── BODY CARE — Fragrance ─────────────────────────────────────────
+  {
+    id: "bc-024",
     slug: "sol-de-janeiro-cheirosa-59",
     name: "Sol de Janeiro Cheirosa Hair & Body Perfume Mist 59",
     brand: "Sol de Janeiro",
@@ -669,6 +682,32 @@ export const products: Product[] = [
     description: "Vaseline's classic lip therapy that heals and protects dry, chapped lips with petroleum jelly.",
     emoji: "🤍",
   },
+  {
+    id: "sk-022",
+    slug: "vaseline-lip-therapy-rosy",
+    name: "Vaseline Lip Therapy Rosy Lips Tinted Lip Balm",
+    brand: "Vaseline",
+    category: "skincare",
+    subcategory: "Lip Care",
+    tags: ["vaseline", "rosy lips", "tinted lip balm", "lip care", "pink lips", "moisturizing", "skincare", "tinted balm"],
+    affiliateUrl: "https://amzn.to/3RTQPFz",
+    image: "/products/skincare/lip-care/vaseline-lip-therapy-rosy.webp",
+    description: "Vaseline's tinted rose lip balm that adds a subtle pink flush while deeply moisturizing your lips.",
+    emoji: "🌸",
+  },
+  {
+    id: "sk-023",
+    slug: "korean-sunscreen-spf50-2pc",
+    name: "2PC Korean Sunscreen SPF50 PA++++",
+    brand: "Korean Beauty",
+    category: "skincare",
+    subcategory: "Sunscreen",
+    tags: ["korean sunscreen", "spf50", "pa++++", "sunscreen", "sun protection", "k-beauty", "2pc", "uv protection", "skincare"],
+    affiliateUrl: "https://amzn.to/4xJFbMy",
+    image: "/products/skincare/sunscreen/korean-sunscreen-spf50-2pc.webp",
+    description: "A bestselling 2-pack Korean SPF50 PA++++ sunscreen with ultra-light formula for daily sun protection.",
+    emoji: "☀️",
+  },
 
   // ─── HAIR CARE — Oils / Leave-In Treatments ───────────────────────
   {
@@ -735,6 +774,19 @@ export const products: Product[] = [
     image: "/products/hair-care/oils/ouai-hair-oil-bundle.webp",
     description: "OUAI's luxurious hair oil bundle for silky, shiny, frizz-free hair with a beautiful scent.",
     emoji: "🫙",
+  },
+  {
+    id: "hc-005b",
+    slug: "parachute-coconut-hair-oil",
+    name: "Parachute Advansed Gold Coconut Hair Oil",
+    brand: "Parachute",
+    category: "hair-care",
+    subcategory: "Oils",
+    tags: ["parachute", "coconut hair oil", "hair oil", "hair care", "nourishing", "coconut", "advansed gold", "scalp", "growth"],
+    affiliateUrl: "https://amzn.to/4fZ0ILg",
+    image: "/products/hair-care/oils/parachute-coconut-hair-oil.webp",
+    description: "Parachute Advansed Gold enriched coconut hair oil that deeply nourishes roots and gives lustrous, healthy hair.",
+    emoji: "🥥",
   },
   // ─── HAIR CARE — Tools / Brushes / Accessories ────────────────────
   {

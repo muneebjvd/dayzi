@@ -50,6 +50,12 @@ const categories = [
 
 export default function HomePage() {
   const featuredSlugs = [
+    // New products featured first
+    "vaseline-petroleum-jelly",
+    "parachute-coconut-hair-oil",
+    "vaseline-lip-therapy-rosy",
+    "korean-sunscreen-spf50-2pc",
+    // Previously featured
     "glycolic-acid-exfoliating-toner",
     "shower-brush-long-handle",
     "johnsons-baby-lotion",
@@ -86,7 +92,7 @@ export default function HomePage() {
             <div className="absolute inset-0 rounded-full bg-[#ea5883] animate-sparkle" style={{ animationDuration: "3s" }} />
             <div className="absolute inset-1 rounded-full bg-white" />
             <div className="absolute inset-2 rounded-full flex items-center justify-center overflow-hidden">
-              <img src="https://cdn.beacons.ai/user_content/h3XTnrURCIUPkoWfwcbRGUbSDtg1/profile_dayzii.png?q=1786558813.1908417" alt="Profile" className="w-full h-full object-cover" />
+              <img src="/profile.jpg" alt="Profile" className="w-full h-full object-cover" />
             </div>
 
             {/* Floating decorations around avatar */}
