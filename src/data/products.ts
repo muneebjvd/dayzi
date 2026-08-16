@@ -4,7 +4,7 @@ import Fuse from "fuse.js";
 export const products: Product[] = [
   // ─── BODY CARE — Cleansing / Body Wash ─────────────────────────────
   {
-    id: "bc-001",
+    id: "p-1",
     slug: "dove-body-wash",
     name: "Dove Body Wash Deep Moisture",
     brand: "Dove",
@@ -17,7 +17,7 @@ export const products: Product[] = [
     emoji: "🧴",
   },
   {
-    id: "bc-002",
+    id: "p-2",
     slug: "philosophy-bath-shower-gel",
     name: "Philosophy Scent-Sational Hydrating Bath & Shower Gel",
     brand: "Philosophy",
@@ -30,7 +30,7 @@ export const products: Product[] = [
     emoji: "🫧",
   },
   {
-    id: "bc-003",
+    id: "p-3",
     slug: "dove-shea-butter-vanilla-body-wash",
     name: "Dove Body Wash Pamper Shea Butter & Vanilla",
     brand: "Dove",
@@ -43,7 +43,7 @@ export const products: Product[] = [
     emoji: "🍦",
   },
   {
-    id: "bc-004",
+    id: "p-4",
     slug: "dove-purely-pampering-cream-body-wash",
     name: "Dove Purely Pampering Cream Body Wash",
     brand: "Dove",
@@ -56,7 +56,7 @@ export const products: Product[] = [
     emoji: "🫶",
   },
   {
-    id: "bc-005",
+    id: "p-5",
     slug: "method-body-wash-pure-peace",
     name: "Method Body Wash, Pure Peace",
     brand: "Method",
@@ -69,7 +69,7 @@ export const products: Product[] = [
     emoji: "🌸",
   },
   {
-    id: "bc-006",
+    id: "p-6",
     slug: "dove-beauty-bar-soap",
     name: "Dove Beauty Bar Soap",
     brand: "Dove",
@@ -82,7 +82,7 @@ export const products: Product[] = [
     emoji: "🧼",
   },
   {
-    id: "bc-007",
+    id: "p-7",
     slug: "olay-super-serum-body-wash",
     name: "Olay Super Serum Body Wash for Extra Dry Skin",
     brand: "Olay",
@@ -96,7 +96,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Exfoliation Scrubs & Toners ───────────────────────
   {
-    id: "bc-008",
+    id: "p-8",
     slug: "glycolic-acid-exfoliating-toner",
     name: "7% Glycolic Acid Exfoliating Toner",
     brand: "Generic",
@@ -109,7 +109,7 @@ export const products: Product[] = [
     emoji: "💧",
   },
   {
-    id: "bc-009",
+    id: "p-9",
     slug: "dove-pomegranate-shea-butter-scrub",
     name: "Dove Pomegranate & Shea Butter Body Scrub",
     brand: "Dove",
@@ -122,7 +122,7 @@ export const products: Product[] = [
     emoji: "🍓",
   },
   {
-    id: "bc-010",
+    id: "p-10",
     slug: "tree-hut-body-scrub",
     name: "Tree Hut Body Scrub",
     brand: "Tree Hut",
@@ -136,7 +136,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Mitts & Gloves ────────────────────────────────────
   {
-    id: "bc-011",
+    id: "p-11",
     slug: "premium-exfoliating-mitt",
     name: "Premium Exfoliating Mitt",
     brand: "Generic",
@@ -149,7 +149,7 @@ export const products: Product[] = [
     emoji: "🧤",
   },
   {
-    id: "bc-012",
+    id: "p-12",
     slug: "korean-exfoliating-glove",
     name: "Exfoliating Glove, Korean Exfoliating Mitt",
     brand: "Generic",
@@ -163,7 +163,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Brushes / Tools ───────────────────────────────────
   {
-    id: "bc-013",
+    id: "p-13",
     slug: "silicone-bath-shampoo-brush",
     name: "2 in 1 Bath and Shampoo Body Brush, Silicone Exfoliating",
     brand: "Generic",
@@ -176,7 +176,7 @@ export const products: Product[] = [
     emoji: "🪥",
   },
   {
-    id: "bc-014",
+    id: "p-14",
     slug: "dry-body-brush-natural-bristles",
     name: "Dry Brushing Body Brush with Soft and Stiff Natural Bristles",
     brand: "Generic",
@@ -189,7 +189,7 @@ export const products: Product[] = [
     emoji: "🌾",
   },
   {
-    id: "bc-015",
+    id: "p-15",
     slug: "shower-brush-long-handle",
     name: "Shower Brush Long Handle with Stiff and Soft Bristles",
     brand: "Generic",
@@ -203,7 +203,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Shaving ───────────────────────────────────────────
   {
-    id: "bc-016",
+    id: "p-16",
     slug: "eos-shea-butter-shave-cream",
     name: "eos Shea Butter Shave Cream",
     brand: "eos",
@@ -216,7 +216,7 @@ export const products: Product[] = [
     emoji: "🪒",
   },
   {
-    id: "bc-017",
+    id: "p-17",
     slug: "gillette-venus-comfortglide-razor",
     name: "Gillette Venus ComfortGlide Women's Razor",
     brand: "Gillette Venus",
@@ -230,7 +230,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Moisturizers / Lotions / Creams ───────────────────
   {
-    id: "bc-018",
+    id: "p-18",
     slug: "eos-moisturizer",
     name: "EOS Moisturizer",
     brand: "eos",
@@ -243,7 +243,7 @@ export const products: Product[] = [
     emoji: "🌷",
   },
   {
-    id: "bc-019",
+    id: "p-19",
     slug: "nivea-cocoa-butter-body-cream",
     name: "NIVEA Cocoa Butter Body Cream",
     brand: "NIVEA",
@@ -256,7 +256,7 @@ export const products: Product[] = [
     emoji: "🍫",
   },
   {
-    id: "bc-020",
+    id: "p-20",
     slug: "victorias-secret-body-lotion",
     name: "Victoria's Secret Body Fragrance Lotion",
     brand: "Victoria's Secret",
@@ -269,7 +269,7 @@ export const products: Product[] = [
     emoji: "🌹",
   },
   {
-    id: "bc-021",
+    id: "p-21",
     slug: "johnsons-baby-lotion",
     name: "Johnson's Baby Lotion",
     brand: "Johnson's",
@@ -282,7 +282,7 @@ export const products: Product[] = [
     emoji: "🤍",
   },
   {
-    id: "bc-022",
+    id: "p-22",
     slug: "johnsons-baby-oil",
     name: "Johnson's Baby Oil",
     brand: "Johnson's",
@@ -295,7 +295,7 @@ export const products: Product[] = [
     emoji: "💛",
   },
   {
-    id: "bc-023",
+    id: "p-23",
     slug: "vaseline-petroleum-jelly",
     name: "Vaseline Petroleum Jelly Original Skin Care For Dry Skin",
     brand: "Vaseline",
@@ -309,7 +309,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Fragrance ─────────────────────────────────────────
   {
-    id: "bc-024",
+    id: "p-24",
     slug: "sol-de-janeiro-cheirosa-59",
     name: "Sol de Janeiro Cheirosa Hair & Body Perfume Mist 59",
     brand: "Sol de Janeiro",
@@ -322,7 +322,7 @@ export const products: Product[] = [
     emoji: "🌺",
   },
   {
-    id: "bc-024",
+    id: "p-25",
     slug: "sol-de-janeiro-cheirosa-68",
     name: "Sol de Janeiro Cheirosa Hair & Body Perfume Mist 68",
     brand: "Sol de Janeiro",
@@ -335,7 +335,7 @@ export const products: Product[] = [
     emoji: "🍮",
   },
   {
-    id: "bc-025",
+    id: "p-26",
     slug: "sol-de-janeiro-cheirosa-62",
     name: "Sol de Janeiro Cheirosa Hair & Body Perfume Mist 62",
     brand: "Sol de Janeiro",
@@ -348,7 +348,7 @@ export const products: Product[] = [
     emoji: "🫐",
   },
   {
-    id: "bc-026",
+    id: "p-27",
     slug: "eos-cashmere-body-mist",
     name: "eos Cashmere Body Mist – Vanilla, Body Spray",
     brand: "eos",
@@ -361,7 +361,7 @@ export const products: Product[] = [
     emoji: "🕊️",
   },
   {
-    id: "bc-027",
+    id: "p-28",
     slug: "ariana-grande-mod-vanilla-perfume",
     name: "Ariana Grande MOD Vanilla Eau De Parfum",
     brand: "Ariana Grande",
@@ -374,7 +374,7 @@ export const products: Product[] = [
     emoji: "🦋",
   },
   {
-    id: "bc-028",
+    id: "p-29",
     slug: "billie-eilish-eau-de-parfum",
     name: "Billie Eilish Eau de Parfum Spray Perfume",
     brand: "Billie Eilish",
@@ -388,7 +388,7 @@ export const products: Product[] = [
   },
   // ─── BODY CARE — Deodorant ─────────────────────────────────────────
   {
-    id: "bc-029",
+    id: "p-30",
     slug: "dove-advanced-care-deodorant-spray",
     name: "Dove Advanced Care Antiperspirant Deodorant Spray",
     brand: "Dove",
@@ -403,7 +403,7 @@ export const products: Product[] = [
 
   // ─── SKINCARE — Tools ──────────────────────────────────────────────
   {
-    id: "sk-001",
+    id: "p-31",
     slug: "ice-roller-face-eye",
     name: "Ice Roller for Face and Eye",
     brand: "Generic",
@@ -417,7 +417,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Cleansing ──────────────────────────────────────────
   {
-    id: "sk-002",
+    id: "p-32",
     slug: "garnier-micellar-facial-cleanser",
     name: "Garnier SkinActive Micellar Facial Cleanser & Makeup Remover",
     brand: "Garnier",
@@ -430,7 +430,7 @@ export const products: Product[] = [
     emoji: "💦",
   },
   {
-    id: "sk-003",
+    id: "p-33",
     slug: "neutrogena-makeup-remover-towelettes",
     name: "Neutrogena Makeup Remover Towelettes, Pink Grapefruit",
     brand: "Neutrogena",
@@ -443,7 +443,7 @@ export const products: Product[] = [
     emoji: "🍊",
   },
   {
-    id: "sk-004",
+    id: "p-34",
     slug: "byoma-creamy-jelly-cleanser",
     name: "BYOMA Creamy Jelly Cleanser",
     brand: "BYOMA",
@@ -456,7 +456,7 @@ export const products: Product[] = [
     emoji: "🫙",
   },
   {
-    id: "sk-005",
+    id: "p-35",
     slug: "cerave-air-foam-face-wash",
     name: "CeraVe Air Foam Face Wash, Hydrating Facial Cleanser",
     brand: "CeraVe",
@@ -469,7 +469,7 @@ export const products: Product[] = [
     emoji: "🫧",
   },
   {
-    id: "sk-006",
+    id: "p-36",
     slug: "honest-beauty-gentle-gel-cleanser",
     name: "Honest Beauty Gentle Gel Daily Face Cleanser, Sensitive",
     brand: "Honest Beauty",
@@ -483,7 +483,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Sunscreen ──────────────────────────────────────────
   {
-    id: "sk-007",
+    id: "p-37",
     slug: "skin1004-water-fit-sun-serum",
     name: "Centella Sunscreen: SPF 50 Water Fit Sun Serum UV - skin1004",
     brand: "SKIN1004",
@@ -496,7 +496,7 @@ export const products: Product[] = [
     emoji: "☀️",
   },
   {
-    id: "sk-008",
+    id: "p-38",
     slug: "relief-sun-organic-korean-sunscreen",
     name: "RELIEF SUN Relief Sun Organic Korean Sunscreen SPF",
     brand: "RELIEF SUN",
@@ -510,7 +510,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Exfoliation / Toning ──────────────────────────────
   {
-    id: "sk-009",
+    id: "p-39",
     slug: "the-ordinary-salicylic-acid-solution",
     name: "The Ordinary Salicylic Acid 2% Solution",
     brand: "The Ordinary",
@@ -523,7 +523,7 @@ export const products: Product[] = [
     emoji: "🔬",
   },
   {
-    id: "sk-010",
+    id: "p-40",
     slug: "glow-recipe-pha-bha-face-toner",
     name: "Glow Recipe PHA + BHA Face Toner, Korean Exfoliating",
     brand: "Glow Recipe",
@@ -536,7 +536,7 @@ export const products: Product[] = [
     emoji: "🍒",
   },
   {
-    id: "sk-011",
+    id: "p-41",
     slug: "elf-skin-holy-hydration-peeling-exfoliant",
     name: "e.l.f. SKIN Holy Hydration! Gentle Peeling Exfoliant",
     brand: "e.l.f. SKIN",
@@ -550,7 +550,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Masks ──────────────────────────────────────────────
   {
-    id: "sk-012",
+    id: "p-42",
     slug: "biodance-bio-collagen-deep-mask",
     name: "BIODANCE Bio-Collagen Real Deep Mask, Hydrating",
     brand: "BIODANCE",
@@ -563,7 +563,7 @@ export const products: Product[] = [
     emoji: "💎",
   },
   {
-    id: "sk-013",
+    id: "p-43",
     slug: "cosrx-snail-mucin-sheet-mask",
     name: "COSRX Snail Mucin Sheet Mask",
     brand: "COSRX",
@@ -577,7 +577,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Moisturizers ───────────────────────────────────────
   {
-    id: "sk-014",
+    id: "p-44",
     slug: "innisfree-cherry-blossom-glow-jelly-cream",
     name: "Innisfree Cherry Blossom Glow Jelly Cream",
     brand: "Innisfree",
@@ -590,7 +590,7 @@ export const products: Product[] = [
     emoji: "🌸",
   },
   {
-    id: "sk-015",
+    id: "p-45",
     slug: "fresh-lotus-youth-preserve-dream-cream",
     name: "Fresh Lotus Youth Preserve Dream Face Cream Supercharged",
     brand: "Fresh",
@@ -604,7 +604,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Body Oil / Serum ──────────────────────────────────
   {
-    id: "sk-016",
+    id: "p-46",
     slug: "bio-oil-skincare-body-oil-serum",
     name: "Bio-Oil Skincare Body Oil Serum, Scars & Stretch Marks",
     brand: "Bio-Oil",
@@ -618,7 +618,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Eye Care ───────────────────────────────────────────
   {
-    id: "sk-017",
+    id: "p-47",
     slug: "the-ordinary-multi-peptide-eye-serum",
     name: "The Ordinary Multi-Peptide Eye Serum",
     brand: "The Ordinary",
@@ -632,7 +632,7 @@ export const products: Product[] = [
   },
   // ─── SKINCARE — Lip Care ───────────────────────────────────────────
   {
-    id: "sk-018",
+    id: "p-48",
     slug: "laneige-lip-sleeping-mask",
     name: "LANEIGE Lip Sleeping Mask: Korean Overnight Treatment",
     brand: "LANEIGE",
@@ -645,7 +645,7 @@ export const products: Product[] = [
     emoji: "💋",
   },
   {
-    id: "sk-019",
+    id: "p-49",
     slug: "summer-fridays-lip-butter-balm",
     name: "Summer Fridays Lip Butter Balm – Moisturizing Lip Gloss",
     brand: "Summer Fridays",
@@ -658,7 +658,7 @@ export const products: Product[] = [
     emoji: "🫦",
   },
   {
-    id: "sk-020",
+    id: "p-50",
     slug: "amoado-sugar-lip-scrub",
     name: "AMOADO Sugar Lip Scrub for Dark Lips",
     brand: "AMOADO",
@@ -671,7 +671,7 @@ export const products: Product[] = [
     emoji: "🍬",
   },
   {
-    id: "sk-021",
+    id: "p-51",
     slug: "vaseline-lip-therapy",
     name: "Vaseline Lip Therapy Care",
     brand: "Vaseline",
@@ -684,7 +684,7 @@ export const products: Product[] = [
     emoji: "🤍",
   },
   {
-    id: "sk-022",
+    id: "p-52",
     slug: "vaseline-lip-therapy-rosy",
     name: "Vaseline Lip Therapy Rosy Lips Tinted Lip Balm",
     brand: "Vaseline",
@@ -697,7 +697,7 @@ export const products: Product[] = [
     emoji: "🌸",
   },
   {
-    id: "sk-023",
+    id: "p-53",
     slug: "korean-sunscreen-spf50-2pc",
     name: "2PC Korean Sunscreen SPF50 PA++++",
     brand: "Korean Beauty",
@@ -712,7 +712,7 @@ export const products: Product[] = [
 
   // ─── HAIR CARE — Oils / Leave-In Treatments ───────────────────────
   {
-    id: "hc-001",
+    id: "p-54",
     slug: "ouai-leave-in-conditioner",
     name: "OUAI Multitasking Leave In Conditioner",
     brand: "OUAI",
@@ -725,7 +725,7 @@ export const products: Product[] = [
     emoji: "✨",
   },
   {
-    id: "hc-002",
+    id: "p-55",
     slug: "olaplex-no5-leave-in-conditioner",
     name: "Olaplex N°.5 Leave-In Conditioner",
     brand: "Olaplex",
@@ -738,7 +738,7 @@ export const products: Product[] = [
     emoji: "🔗",
   },
   {
-    id: "hc-003",
+    id: "p-56",
     slug: "mielle-rosemary-mint-hair-oil",
     name: "Mielle Organics Rosemary Mint Hair Oil with Biotin",
     brand: "Mielle Organics",
@@ -751,7 +751,7 @@ export const products: Product[] = [
     emoji: "🌿",
   },
   {
-    id: "hc-004",
+    id: "p-57",
     slug: "olaplex-no7-bonding-hair-oil",
     name: "OLAPLEX N°.7 Bonding Hair Oil",
     brand: "Olaplex",
@@ -764,7 +764,7 @@ export const products: Product[] = [
     emoji: "💫",
   },
   {
-    id: "hc-005",
+    id: "p-58",
     slug: "ouai-hair-oil-bundle",
     name: "OUAI Hair Oil Bundle",
     brand: "OUAI",
@@ -777,7 +777,7 @@ export const products: Product[] = [
     emoji: "🫙",
   },
   {
-    id: "hc-005b",
+    id: "p-59",
     slug: "parachute-coconut-hair-oil",
     name: "Parachute Advansed Gold Coconut Hair Oil",
     brand: "Parachute",
@@ -791,7 +791,7 @@ export const products: Product[] = [
   },
   // ─── HAIR CARE — Tools / Brushes / Accessories ────────────────────
   {
-    id: "hc-006",
+    id: "p-60",
     slug: "self-grip-hair-rollers",
     name: "Self-Grip Hair Rollers Set for Long, Short Hair and Bangs",
     brand: "Generic",
@@ -804,7 +804,7 @@ export const products: Product[] = [
     emoji: "💈",
   },
   {
-    id: "hc-007",
+    id: "p-61",
     slug: "cat-shape-hair-head-massager",
     name: "Cat Shape Hair Head Massager Scalp Wooden Comb",
     brand: "Generic",
@@ -817,7 +817,7 @@ export const products: Product[] = [
     emoji: "🐱",
   },
   {
-    id: "hc-008",
+    id: "p-62",
     slug: "scalp-scrubber-silicone-bristles",
     name: "Scalp Scrubber with Soft Silicone Bristles",
     brand: "Generic",
@@ -830,7 +830,7 @@ export const products: Product[] = [
     emoji: "🌊",
   },
   {
-    id: "hc-009",
+    id: "p-63",
     slug: "vent-hairbrush-for-women",
     name: "Vent Hairbrush for Women",
     brand: "Generic",
@@ -843,7 +843,7 @@ export const products: Product[] = [
     emoji: "💇",
   },
   {
-    id: "hc-010",
+    id: "p-64",
     slug: "frizz-control-blowout-hair-dryer-brush",
     name: "Frizz Control Blowout Hair Dryer Brush for Drying and Styling",
     brand: "Generic",
@@ -856,7 +856,7 @@ export const products: Product[] = [
     emoji: "💨",
   },
   {
-    id: "hc-011",
+    id: "p-65",
     slug: "gainwell-bamboo-hair-brush",
     name: "GAINWELL Bamboo Hair Brush for Hair Growth",
     brand: "GAINWELL",
@@ -870,7 +870,7 @@ export const products: Product[] = [
   },
   // ─── HAIR CARE — Shampoo & Conditioner ────────────────────────────
   {
-    id: "hc-012",
+    id: "p-66",
     slug: "monday-haircare-volume-shampoo-conditioner",
     name: "MONDAY HAIRCARE Volume Shampoo + Conditioner",
     brand: "MONDAY HAIRCARE",
@@ -883,7 +883,7 @@ export const products: Product[] = [
     emoji: "📣",
   },
   {
-    id: "hc-013",
+    id: "p-67",
     slug: "conditioner-fragrance-free-hydrating-scalp",
     name: "The Conditioner Fragrance-Free, Hydrating Scalp Care",
     brand: "Generic",
@@ -896,7 +896,7 @@ export const products: Product[] = [
     emoji: "💧",
   },
   {
-    id: "hc-014",
+    id: "p-68",
     slug: "garnier-honey-treasures-repairing-shampoo",
     name: "Garnier Whole Blends Honey Treasures Repairing Shampoo",
     brand: "Garnier",
@@ -909,7 +909,7 @@ export const products: Product[] = [
     emoji: "🍯",
   },
   {
-    id: "hc-015",
+    id: "p-69",
     slug: "garnier-fructis-pure-clean-shampoo",
     name: "Garnier Fructis Pure Clean Purifying Shampoo, Silicone-Free",
     brand: "Garnier",
@@ -922,7 +922,7 @@ export const products: Product[] = [
     emoji: "✨",
   },
   {
-    id: "hc-016",
+    id: "p-70",
     slug: "garnier-fructis-sleek-shine-shampoo-conditioner",
     name: "Garnier Fructis Sleek & Shine Shampoo, Conditioner",
     brand: "Garnier",
@@ -935,7 +935,7 @@ export const products: Product[] = [
     emoji: "✨",
   },
   {
-    id: "hc-017",
+    id: "p-71",
     slug: "garnier-fructis-curl-nourish-shampoo-conditioner",
     name: "Garnier Fructis Curl Nourish Moisturizing Shampoo & Conditioner",
     brand: "Garnier",
@@ -948,7 +948,7 @@ export const products: Product[] = [
     emoji: "🌀",
   },
   {
-    id: "hc-018",
+    id: "p-72",
     slug: "loreal-elvive-glycolic-gloss-shampoo",
     name: "L'Oreal Paris Elvive Glycolic + Gloss Shine (Shampoo/Conditioner)",
     brand: "L'Oréal Paris",
@@ -962,7 +962,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-gisou-honey-infused",
+    id: "p-73",
     slug: "gisou-honey-infused",
     name: "Gisou Honey Infused",
     brand: "Gisou",
@@ -976,7 +976,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-garnier-fructis-curl-leave-in-conditioner",
+    id: "p-74",
     slug: "garnier-fructis-curl-leave-in-conditioner",
     name: "Garnier Fructis Curl Leave In Conditioner",
     brand: "Garnier",
@@ -990,7 +990,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-garnier-fructis-damage-repair",
+    id: "p-75",
     slug: "garnier-fructis-damage-repair",
     name: "Garnier Fructis Damage Repair",
     brand: "Garnier",
@@ -1004,7 +1004,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-garnier-botanic-therapy",
+    id: "p-76",
     slug: "garnier-botanic-therapy",
     name: "Garnier Botanic Therapy",
     brand: "Garnier",
@@ -1018,7 +1018,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-loreal-paris-elvive-leave-in-hair-serum",
+    id: "p-77",
     slug: "loreal-paris-elvive-leave-in-hair-serum",
     name: "L'Oreal Paris Elvive Leave In Hair Serum",
     brand: "L'Oreal",
@@ -1032,7 +1032,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-loreal-sulfate-free-mask",
+    id: "p-78",
     slug: "loreal-sulfate-free-mask",
     name: "L'Oreal Sulfate Free Mask",
     brand: "L'Oreal",
@@ -1046,7 +1046,7 @@ export const products: Product[] = [
   },
 
   {
-    id: "hc-new-gisou-honey-gloss",
+    id: "p-79",
     slug: "gisou-honey-gloss",
     name: "Gisou Honey Gloss",
     brand: "Gisou",
