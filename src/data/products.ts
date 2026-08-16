@@ -1,4 +1,5 @@
 import { Product } from "@/types/product";
+import Fuse from "fuse.js";
 
 export const products: Product[] = [
   // ─── BODY CARE — Cleansing / Body Wash ─────────────────────────────
@@ -1070,16 +1071,18 @@ export function getProductsByCategory(category: string): Product[] {
 
 export function searchProducts(query: string): Product[] {
   if (!query.trim()) return products;
-  const q = query.toLowerCase();
-  return products.filter(
-    (p) =>
-      p.name.toLowerCase().includes(q) ||
-      p.brand.toLowerCase().includes(q) ||
-      p.category.toLowerCase().includes(q) ||
-      p.subcategory.toLowerCase().includes(q) ||
-      p.tags.some((t) => t.toLowerCase().includes(q)) ||
-      p.description.toLowerCase().includes(q)
-  );
+  
+  const fuse = new Fuse(products, {
+    keys: ["name", "brand", "category", "subcategory", "tags", "description"],
+    threshold: 0.4, // 0.0 is perfect match, 1.0 is match anything
+    ignoreLocation: true,
+  });
+
+  const results = fuse.search(query).map(result => result.item);
+  
+  // Deduplicate by ID just in case (to prevent duplicate products in UI)
+  const uniqueResults = Array.from(new Map(results.map(item => [item.id, item])).values());
+  return uniqueResults;
 }
 
 export function getRelatedProducts(product: Product, limit = 4): Product[] {
