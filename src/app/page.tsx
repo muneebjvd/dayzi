@@ -50,25 +50,29 @@ const categories = [
 
 export default function HomePage() {
   const featuredSlugs = [
-    // New products featured first
+    // ✨ New additions — at the very top
     "vaseline-petroleum-jelly",
     "parachute-coconut-hair-oil",
     "vaseline-lip-therapy-rosy",
     "korean-sunscreen-spf50-2pc",
-    // Previously featured
+    // 💋 Lip care group right after
+    "laneige-lip-sleeping-mask",
+    "summer-fridays-lip-butter-balm",
+    "vaseline-lip-therapy",
+    // 🍼 Baby oil & lotion
+    "johnsons-baby-oil",
+    "johnsons-baby-lotion",
+    // ☀️ Sunscreens
+    "skin1004-water-fit-sun-serum",
+    "relief-sun-organic-korean-sunscreen",
+    // 🌸 Rest of featured
     "glycolic-acid-exfoliating-toner",
     "shower-brush-long-handle",
-    "johnsons-baby-lotion",
-    "johnsons-baby-oil",
     "dove-pomegranate-shea-butter-scrub",
     "sol-de-janeiro-cheirosa-59",
     "sol-de-janeiro-cheirosa-68",
     "sol-de-janeiro-cheirosa-62",
-    "skin1004-water-fit-sun-serum",
-    "relief-sun-organic-korean-sunscreen",
     "gisou-honey-infused",
-    "summer-fridays-lip-butter-balm",
-    "laneige-lip-sleeping-mask",
   ];
   const featuredProducts = products.filter(p => featuredSlugs.includes(p.slug));
 
