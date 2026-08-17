@@ -7,7 +7,7 @@
  *   3. Production console stays clean.
  */
 
-export const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-281TQ2VCT3";
 
 const isDev = process.env.NODE_ENV === "development";
 

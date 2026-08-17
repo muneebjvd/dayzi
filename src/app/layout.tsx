@@ -28,6 +28,8 @@ import AnalyticsTracker from "@/components/AnalyticsTracker";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import AmazonLinkTracker from "@/components/AmazonLinkTracker";
 
+import { Suspense } from "react";
+
 export default function RootLayout({
   children,
 }: {
@@ -36,6 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
+        <Suspense fallback={null}>
+          <GoogleAnalytics />
+        </Suspense>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -44,7 +49,6 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        <GoogleAnalytics />
         <AmazonLinkTracker />
         <AnalyticsTracker />
         <BackgroundStickers />
