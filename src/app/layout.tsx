@@ -25,10 +25,11 @@ export const metadata: Metadata = {
 
 import BackgroundStickers from "@/components/BackgroundStickers";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleAnalyticsTracker from "@/components/GoogleAnalytics";
 import AmazonLinkTracker from "@/components/AmazonLinkTracker";
 
 import { Suspense } from "react";
+import { GA_ID } from "@/lib/gtag";
 
 export default function RootLayout({
   children,
@@ -38,8 +39,19 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <head>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `
+          }}
+        />
         <Suspense fallback={null}>
-          <GoogleAnalytics />
+          <GoogleAnalyticsTracker />
         </Suspense>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

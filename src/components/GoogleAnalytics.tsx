@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { GA_ID, pageview } from "@/lib/gtag";
 
 /**
- * Loads the GA4 script exactly as Google provides it.
- * Tracks SPA route changes manually without double-firing on initial load.
+ * Tracks SPA route changes.
+ * The actual GA scripts are statically injected in layout.tsx.
  */
-export default function GoogleAnalytics() {
+export default function GoogleAnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const lastPath = useRef("");
@@ -17,7 +17,7 @@ export default function GoogleAnalytics() {
     if (!GA_ID) return;
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
     
-    // The initial page load is tracked automatically by the config script below.
+    // The initial page load is tracked automatically by the config script in layout.tsx.
     if (lastPath.current === "") {
       lastPath.current = url;
       return;
@@ -28,21 +28,5 @@ export default function GoogleAnalytics() {
     pageview(url);
   }, [pathname, searchParams]);
 
-  if (!GA_ID) return null;
-
-  return (
-    <>
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `
-        }}
-      />
-    </>
-  );
+  return null;
 }
