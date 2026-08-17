@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 };
 
 import BackgroundStickers from "@/components/BackgroundStickers";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 
 export default function RootLayout({
   children,
@@ -41,6 +42,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <AnalyticsTracker />
         <BackgroundStickers />
         <Navbar />
         <main className="flex-1 pb-20 md:pb-0">{children}</main>
