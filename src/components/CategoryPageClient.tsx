@@ -5,6 +5,7 @@ import { Product } from "@/types/product";
 import ProductGrid from "@/components/ProductGrid";
 import FilterChips from "@/components/FilterChips";
 import BackgroundStickers from "@/components/BackgroundStickers";
+import CategoryViewTracker from "@/components/CategoryViewTracker";
 
 interface CategoryPageClientProps {
   products: Product[];
@@ -74,6 +75,7 @@ export default function CategoryPageClient({
 
   return (
     <div>
+      <CategoryViewTracker category={categoryName} />
       {/* Hero section */}
       <div className="bg-[#ea5883] py-10 px-4 relative overflow-hidden">
         {/* Decorative elements */}

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProductBySlug, getRelatedProducts, products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
+import ProductViewTracker from "@/components/ProductViewTracker";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -56,6 +57,11 @@ export default async function ProductPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen">
+      <ProductViewTracker
+        productName={product.name}
+        productId={product.id}
+        category={product.category}
+      />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="max-w-6xl mx-auto px-4 pt-4 pb-2">
         <ol className="flex items-center gap-1 text-xs text-neutral-400 flex-wrap">

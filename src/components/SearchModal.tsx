@@ -1,10 +1,11 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { products as allProducts, searchProducts } from "@/data/products";
 import { Product } from "@/types/product";
 import Link from "next/link";
 import Image from "next/image";
+import { trackProductSearch } from "@/lib/gtag";
 
 interface SearchModalProps {
   onClose: () => void;
@@ -101,6 +102,23 @@ export default function SearchModal({ onClose }: SearchModalProps) {
   const handleSearch = useCallback((q: string) => {
     setQuery(q);
   }, []);
+
+  // Debounced search tracking — fires 300ms after user stops typing
+  const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => {
+    if (searchTimer.current) clearTimeout(searchTimer.current);
+    const q = query.trim();
+    if (!q) return;
+    searchTimer.current = setTimeout(() => {
+      trackProductSearch({
+        search_term: q,
+        results_count: results.length,
+      });
+    }, 300);
+    return () => {
+      if (searchTimer.current) clearTimeout(searchTimer.current);
+    };
+  }, [query, results.length]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Escape") onClose();

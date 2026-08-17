@@ -25,6 +25,8 @@ export const metadata: Metadata = {
 
 import BackgroundStickers from "@/components/BackgroundStickers";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import AmazonLinkTracker from "@/components/AmazonLinkTracker";
 
 export default function RootLayout({
   children,
@@ -42,6 +44,8 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <GoogleAnalytics />
+        <AmazonLinkTracker />
         <AnalyticsTracker />
         <BackgroundStickers />
         <Navbar />
